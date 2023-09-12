@@ -8,6 +8,7 @@ header {
     margin-bottom: 50px;
     border-bottom: white dotted 2px;
 }
-#image-id {
-    object-fit: contain;
+
+.light-bg {
+    background-color: rgb(196, 174, 174, .5);
 }
