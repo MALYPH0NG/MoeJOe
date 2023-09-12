@@ -1,3 +1,13 @@
 body {
-    background-color: aqua;
+    background-color: gray;
+}
+
+header {
+    padding-top: 200px;
+}
+
+header .container {
+    opacity: 70%;
+    border: solid white 1px;
+    padding: 10px 40px;
 }
