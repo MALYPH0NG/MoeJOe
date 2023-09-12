@@ -1,13 +1,13 @@
 body {
-    background-color: gray;
+    background-image: url(/imgs/cafe.jpeg);
 }
 
 header {
-    padding-top: 200px;
+    background-color: rgb(196, 174, 174, .7);
+    padding: 50px 50px;
+    margin-bottom: 50px;
+    border-bottom: white dotted 2px;
 }
-
-header .container {
-    opacity: 70%;
-    border: solid white 1px;
-    padding: 10px 40px;
+#image-id {
+    object-fit: contain;
 }
