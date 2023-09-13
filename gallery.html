@@ -37,6 +37,11 @@
                                     class="fa-solid fa-image fa-lg"></i> Gallery</a></li>
                     </ul>
                 </div>
+                <span class="navbar-text ms-auto">
+                    <button role="button" data-bs-toggle="modal" data-bs-target="#orderModal"
+                        class="btn btn-dark btn-md text-white">Online Order</button>
+                </span>
+            </div>
         </nav>
     </header>
     <div class="container">
@@ -105,10 +110,76 @@
                 <div class="col-4 col-sm-2 offset-1">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="index.html">gallery</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="menu.html">Menu</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
                     </ul>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="orderModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-dark text-white">
+                        <h3 class="modal-title">Order Online</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata"
+                                method="post">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <label for="numDrinks">Number of Drinks</label>
+                                    </div>
+                                    <div class="col">
+                                        <select class="form-control" id="numDrinks" name="numDrinks">
+                                            <option value="select">Select...</option>
+                                            <option for="numDrinks" value="1">1</option>
+                                            <option for="numDrinks" value="2">2</option>
+                                            <option for="numDrinks" value="3">3</option>
+                                            <option for="numDrinks" value="4">4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-5">
+                                        <label for="bagelSelection">Bagel</label>
+                                    </div>
+                                    <div class="col">
+                                        <ol>
+                                            <li class="list-group-item"><input type="checkbox" name="bagel"
+                                                    value="plain"> Plain</li>
+                                            <li class="list-group-item"><input type="checkbox" name="bagel"
+                                                    value="everything"> Everything</li>
+                                            <li class="list-group-item"><input type="checkbox" name="bagel"
+                                                    value="blueberry"> Blueberry</li>
+                                            <li class="list-group-item"><input type="checkbox" name="bagel"
+                                                    value="cinnamon/raisin"> Cinnamon/Raisin</li>
+                                            <li class="list-group-item"><input type="checkbox" name="bagel"
+                                                    value="onion"> Onion</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-5">
+                                        <label for="date">Date</label>
+                                    </div>
+                                    <div class="col">
+                                        <input name="date" class="form-control" id="date" type="date" for="date"
+                                            placeholder="Date">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cancel</button>
+                                        <button type="submit" class="btn btn-primary">Search</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
