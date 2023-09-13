@@ -28,3 +28,7 @@ footer {
     background-color: rgb(196, 174, 174, .7);
     border-top: white dotted 2px;
 }
+
+.gallery-sizing {
+    margin: 50px 50px 50px 50px;
+}
