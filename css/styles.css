@@ -9,6 +9,10 @@ header{
     border-bottom: white dotted 2px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Lobster", cursive;
+}
+
 .light-bg {
     background-color: rgb(196, 174, 174, .5);
     margin: 10px 10px;
